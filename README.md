@@ -1,8 +1,10 @@
 # weixin-video
 
-微信的video问题android下全屏和 ios下不自动播放是个比较顽固的问题，想突破目前阶段有三种方式：
 
-### 【原生video hask】（only for android full screen）
+微信的video问题android下全屏和 ios下不自动播放是个比较顽固的问题。下面介绍接种解决方案。
+
+
+### 【原生video hask】（主要是解决android全屏问题）
 
 #### 第一种： H5类型全屏播放
 
@@ -32,7 +34,7 @@
 
 ### 【[JSmpeg](https://github.com/phoboslab/jsmpeg)】
 
-支持MPEG1 Video 和 MP2 Audio ，推荐以25fps的帧率解码 720p的视频。播放时视频是逐步分段加载的。
+支持MPEG1 Video 和 MP2 Audio ，推荐以25fps的帧率解码 720p的视频。播放时视频是逐步分段加载的。事件API交匮乏。
 
 > 视频处理 `可以通过降低码率的方式减小视频大小`，有两种方式：
 
@@ -94,7 +96,7 @@
 
 ### 【[ogv.js](https://github.com/brion/ogv.js)】
 
-> 一个支持 Ogg/Vorbis/Theora/Opus/WebM格式的基于Emscripten编译的JavaScript播放器
+> 一个支持 Ogg/Vorbis/Theora/Opus/WebM格式的基于Emscripten编译的JavaScript播放器。播放器的操作和API类似Video标签。
 
 > 转换ofv,ogg,webp啥的需要用到*libtheora和libvorbis和webp*, 建议重新编译安装ffmpeg（完整些，以防后患）
 
