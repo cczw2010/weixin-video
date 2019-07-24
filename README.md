@@ -3,7 +3,7 @@
 
 微信的video问题android下全屏和 ios下不自动播放是个比较顽固的问题。下面介绍接种解决方案。
 
-###更新，发现一种新的方式
+###**更新：发现一种新的方式更好用**
 
 	  <video id="videoID" src="xxx" x-webkit-airplay="allow" preload="meta" webkit-playsinline="true" x5-video-player-type="h5-page" x5-video-player-fullscreen="true" playsinline="true" poster="">
 
